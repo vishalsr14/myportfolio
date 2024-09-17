@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,11 +14,17 @@
         header {
             background-color: #333;
             color: #fff;
-            padding: 10px 0;
+            padding: 20px 0;
             text-align: center;
         }
         header h1 {
             margin: 0;
+        }
+        .profile-img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            margin: 10px auto;
         }
         .container {
             width: 80%;
@@ -47,6 +52,18 @@
         a:hover {
             text-decoration: underline;
         }
+        .resume-btn, .linkedin-btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+        .resume-btn:hover, .linkedin-btn:hover {
+            background-color: #0056b3;
+        }
         footer {
             background-color: #333;
             color: #fff;
@@ -61,6 +78,8 @@
 <body>
     <header>
         <h1>Vishal Srinivas Ramesh</h1>
+        <!-- Add your profile image here -->
+        <img src="profile.jpg" alt="Profile Image" class="profile-img"> <!-- Ensure 'profile.jpg' is uploaded to GitHub -->
     </header>
 
     <div class="container">
@@ -110,10 +129,12 @@
             <ul>
                 <li><strong>Email:</strong> <a href="mailto:vishalsr@buffalo.edu">vishalsr@buffalo.edu</a></li>
                 <li><strong>Phone:</strong> +1(716)-292-8010</li>
-                <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/vishal-srinivas-ramesh">linkedin.com/in/vishal-srinivas-ramesh</a></li>
-                <li><strong>Publication:</strong> <a href="https://ieeexplore.ieee.org/document/9776665">Crypto-Currency Price Prediction Using Machine Learning</a></li>
+                <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/vishal-srinivas-ramesh" class="linkedin-btn">LinkedIn Profile</a></li>
             </ul>
         </section>
+
+        <!-- Add buttons for resume download and LinkedIn profile -->
+        <a href="resume.pdf" class="resume-btn" download>Download Resume</a> <!-- Ensure 'resume.pdf' is uploaded to GitHub -->
     </div>
 
     <footer>
